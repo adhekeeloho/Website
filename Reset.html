@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <title>Password Reset</title>
+  </head>
+  <body>
+    <!-- Material form subscription -->
+    <div class="card rest"
+>
+      <h5 class="card-header info-color white-text text-center py-4"
+      >
+        <strong class="form-gap" style="color: #2a2e43;" >Reset Password</strong>
+      </h5>
+
+      <!--Card content-->
+      <div class="card-body px-lg-5">
+
+        <!-- Form -->
+        <form class="text-center" style="color: #2a2e43;" action="#!">
+          <p>
+            Please note that you have requested for a password Reset.
+          </p>
+
+          <p>
+            <a href="" target="_blank">Click To Cancel Password Reset.</a>
+          </p>
+
+          <!-- Name -->
+          <div class="container ">
+            <div class="row" style="padding-left: 350px;">
+                <div class="col-sm-4">
+                  <button type="button" id="btn1" >
+                    hello world
+                <img src="./upward.png" id="arrowRotate" data-swap="./downward.png"  >
+              </button>
+              <button type="button" id="btn1">
+                yellow
+            <img src="./upward.png" id="yellow" data-swap="./downward.png"  >
+          </button>
+                    <label>Recieved Password</label>
+                    <div class="form-group pass_show"> 
+                        <input type="password" value="faisalkhan@123" class="form-control" placeholder="Current Password">
+                        
+                    </div> 
+                       <label>New Password</label>
+                    <div class="form-group pass_show"> 
+                        <input type="password" value="faisal.khan@123" class="form-control" placeholder="New Password"> 
+                    </div> 
+                       <label>Confirm Password</label>
+                    <div class="form-group pass_show"> 
+                        <input type="password" value="faisal.khan@123" class="form-control" placeholder="Confirm Password"> 
+                    </div> 
+                    <!-- E-mai -->
+          <label>Email</label>
+          <div class="form-group pass_show"> 
+              <input type="password" value="faisal.khan@123" class="form-control" placeholder="New Password"> 
+          </div> 
+          <!-- Remember Me -->
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label
+                  ><input type="checkbox" name="remember" /> Remember me</label
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Sign in button -->
+          <button
+            class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect"
+            type="submit"
+          >
+            Sign in
+          </button>
+        </form>
+        <!-- Form -->
+      </div>
+    </div>
+    <!-- Material form subscription -->
+                </div> 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+  $("#arrowRotate").click(function() { 
+      var _this = $(this);
+      var current = _this.attr("src");
+      var swap = _this.attr("data-swap");     
+     _this.attr('src', swap).attr("data-swap",current);   
+  
+
+});  
+$("#yellow").click(function() { 
+      var _this = $(this);
+      var current = _this.attr("src");
+      var swap = _this.attr("data-swap");     
+     _this.attr('src', swap).attr("data-swap",current);   
+     
+     
+});
+    </script>
+  </body>
+</html>
